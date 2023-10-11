@@ -914,6 +914,7 @@ dependencies = [
  "rstest",
  "serde",
  "serde_yaml",
+ "sixel-sys 0.3.1 (git+https://github.com/retpolanne/sixel-sys.git)",
  "syntect",
  "thiserror",
  "unicode-width",
@@ -1199,7 +1200,7 @@ version = "0.3.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cfa95c014543113a192d906e5971d0c8d1e8b4cc1e61026539687a7016644ce5"
 dependencies = [
- "sixel-sys",
+ "sixel-sys 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -1207,6 +1208,14 @@ name = "sixel-sys"
 version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fb46e0cd5569bf910390844174a5a99d52dd40681fff92228d221d9f8bf87dea"
+dependencies = [
+ "make-cmd",
+]
+
+[[package]]
+name = "sixel-sys"
+version = "0.3.1"
+source = "git+https://github.com/retpolanne/sixel-sys.git#653767d1b18c39f6ba556d1eb008c261b2f719ea"
 dependencies = [
  "make-cmd",
 ]
